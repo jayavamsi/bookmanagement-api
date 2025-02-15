@@ -15,7 +15,7 @@ public class User {
     private String address;
     private String number;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @ManyToMany
     @JoinTable(
         name = "user_favorite_books",
         joinColumns = @JoinColumn(name = "user_id"),

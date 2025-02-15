@@ -18,7 +18,11 @@ public class Book {
     @ManyToMany(mappedBy = "favoriteBooks")
     private List<User> users;
     
-    public Long getId() {
+    public Book(String string, String string2, String string3) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Long getId() {
         return id;
     }
 
